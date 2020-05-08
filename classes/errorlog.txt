@@ -1,0 +1,41 @@
+*   Trying 172.217.9.202...
+* TCP_NODELAY set
+* Connected to fcm.googleapis.com (172.217.9.202) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: D:\xampp\apache\bin\curl-ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-ECDSA-AES128-GCM-SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: C=US; ST=California; L=Mountain View; O=Google Inc; CN=*.googleapis.com
+*  start date: Jan 10 09:50:08 2018 GMT
+*  expire date: Apr  4 09:40:00 2018 GMT
+*  subjectAltName: host "fcm.googleapis.com" matched cert's "*.googleapis.com"
+*  issuer: C=US; O=Google Inc; CN=Google Internet Authority G2
+*  SSL certificate verify ok.
+> POST /fcm/send HTTP/1.1
+Host: fcm.googleapis.com
+Accept: */*
+Authorization: key=AAAAeVRXd1w:APA91bEDqkC4K4qpA4AuSsaDg_cD_4zXhEqe1-bsmO-cCqgG8JiF6yHf3HQFFooSn8tn1dDz4HizqX3Gz3iGIdZFnZhscLt3sdgJVjl9Jia0tY4_81xFEvtXEWoewKO6Ybpc2J_q7N_A
+Content-Type: application/json
+Content-Length: 93
+
+* upload completely sent off: 93 out of 93 bytes
+< HTTP/1.1 200 OK
+< Content-Type: application/json; charset=UTF-8
+< Date: Sat, 27 Jan 2018 11:25:38 GMT
+< Expires: Sat, 27 Jan 2018 11:25:38 GMT
+< Cache-Control: private, max-age=0
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: SAMEORIGIN
+< X-XSS-Protection: 1; mode=block
+< Server: GSE
+< Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+< Accept-Ranges: none
+< Vary: Accept-Encoding
+< Transfer-Encoding: chunked
+< 
+* Curl_http_done: called premature == 0
+* Connection #0 to host fcm.googleapis.com left intact
